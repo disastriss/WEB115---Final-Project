@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>WEB115 Project 2: Riss Wright</title>
+</head>
+<header>
+
+</header>
+<body>
+
+  <script>
+    
+    function createStars(type, quantity) {
+        for (let i = 0; i < quantity; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star', `type-${type}`);
+            star.style.left = `${randomNumber(1, 99)}%`;
+            star.style.bottom = `${randomNumber(1, 99)}%`;
+            star.style.animationDuration = `${randomNumber(50, 200)}s`;
+            document.body.appendChild(star);
+        }
+    }
+    function randomNumber(min, max) {
+        return Math.floor(Math.random() * max) + min;
+    }
+    
+    createStars(1, 100);
+    createStars(2, 85);
+    createStars(3, 70);
+  </script>
+
+
+  <!-- nav bar-->
+  <section class="maincontain">
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#js">JavaScript</a>
+      <a href="resume.wright.pdf">Resume</a>
+    </nav>
+
+  
+    <div class="img1">
+      <img class="ufo" src="ufoRiss.PNG" alt="Riss in a UFO" />
+    </div>
+
+    <div class="maindiv" id="about">
+      <h2 class="title">Who is Riss?</h3>
+      <p class="textbox">An aspiring computer programmer currently living in Oregon with my partner and 4 fur-babies. For the last 5 years, I was employed in the pet
+         industry as a dog bather and working towards becoming a professional groomer. Over time I realized that I no longer enjoyed dogs the way I did before they 
+         became my career focus, so I decided to change my career and pursue the path of programming. Always being very tech savvy and excellent with patterns and numbers, 
+         it feels like the perfect fit. My time at GTCC has taught me many of the beginning skills I need to enter to the technology workforce, including HTML/CSS, 
+         JavaScript, and PHP. I have also had the opportunity to hone previous design skills and can effortlessly use a many applications in the Adobe Suite. 
+         In my free time, I love to spend time with my partner, explore new nature spots, travel, and play video games. My interests include technology, self-care, 
+         nature, photography, listening to music, and space. </p>
+    </div>
+
+    <div class="maindiv" id="html">
+      <h2 class="title">What I learned in HTML</h2>
+      <p class="textbox">
+        The biggest takeaway I have from my time working with HTML is that it is essentially the skeleton of the project. It is what holds together all the meat of the project. 
+        Without it, there would not be structure or order. There would be no content to manipulate with CSS or Javascript. Not only that but being able to link to other pages 
+        is what makes the internet the internet. HTML is the reason you can surf the web. Though it was the easiest coding language for me to learn, it does feel 
+        like one of the most important to know. 
+      </p>
+    </div>
+
+    <div class="maindiv" id="css">
+      <h2 class="title">What I learned in CSS</h2>
+      <p class="textbox">
+        CSS for me has been a bit more confusing than HTML, but much more exciting to use. In high school, I loved adding flair to my basic word documents or using photoshop to 
+        create designs to incorporate into my assignments, so as difficult as CSS has been, I’ve been loving learning how to use code to make websites beautiful. The most useful CSS 
+        method I learned was being able to organize elements onto the page using the ‘flex’ property. The biggest challenge in creating a website is how to get everything 
+        you need onto the page and make it aesthetically pleasing. There are so many different layouts that can be done to look good, and most are not possible without the ‘flex’ property. 
+      </p>
+    </div>
+
+    <div class="maindiv" id="js">
+      <h2 class="title">How I incorporated JavaScript</h2>
+      <p class="textbox">
+        When you load my webpage, if you look closely you can see little pink circles floating up from the bottom. This was done with JavaScript and CSS! 
+        With the help of Google and what I learned through our assignments in Mindtap, I was able to create two functions that I inserted into my index.html with a script tag.
+         The first function was for the creation of the “stars” where I used a ‘for’ loop and animation. The second function was a randomNumber function, so the little pink 
+         “stars” would appear at random places and move at different random speeds. Then I added some CSS to give them shape and color. I still have a long way to go with fully
+          understanding JavaScript, since I relied heavily on code that was already created, but it was really exciting to understand enough to get it to work on my page exactly as I imagined it would. 
+      </p>
+    </div>
+
+  </section>
+
+</body>
+
+<footer>
+  <div class="footer"> 
+    <p>Riss Wright <br/> WEB115 2023</p>
+  </div>
+</footer>
+
+</html>
